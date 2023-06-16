@@ -3,7 +3,7 @@ functions = ["BtoD", "DtoB"]
 
 while True:
     # Brugeren vælger funktion, enten Binary til Denary konvertering eller omvendt.
-    func = str(input("Enter 'BtoD' for Binary to Denary conversion, or 'DtoB' for Denary to Binary converstion."))
+    func = str(input("Enter 'BtoD' for Binary to Denary conversion, or 'DtoB' for Denary to Binary converstion: "))
     if func in functions: # inputtet skal være en af mulighederne i listen
         break
     else:
@@ -13,7 +13,7 @@ while True:
 def convertToBinary():
     while True:
         try: # try-except bruges til at tjekke, at inputtet er en integer (int)
-            denary = int(input("Enter a number between 0 and 255"))
+            denary = int(input("Enter a number between 0 and 255: "))
         except: # hvis input ikke er int køres loopet forfra
             print("Please enter a valid number.")
         else:
@@ -38,7 +38,7 @@ def convertToDenary():
     b = {'0', '1'} # der laves et set med de to tal, som indgår i binary, så vi kan tjekke om inputtet er i binary
 
     while True:
-        binary = str(input("Enter a binary using one Byte."))
+        binary = str(input("Enter a binary using one Byte: "))
         t = set(binary) # set-funktionen laver et set af alle unikke karakterer i inputtet.
         # Hvis inputtet er binary, består det udelukkende af 1 eller 0 eller 1 og 0.
 

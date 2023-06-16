@@ -20,7 +20,7 @@ country = countries_list[country] # her bruges de to tegn fra forrige linje som 
 # fx countries_list["DK"] = "Denmark"
 farm = code[3:] # producer ID må svare til alt i slutningen af inputtet
 
-print("This egg originated from the", method, "farming method.", end='\n')
-print("The egg was produced in", country + ".", end='\n')
-print("This egg originated from a farm with the producer ID:", farm + ".")
-# jeg bruger både "+" og "," da "," automatisk indsætter mellemrum mellem de forskellige dele i print()
+print(method, "Egg", end='\n')
+print("Country of Origin:", country, end='\n')
+print("Farm ID:", farm)
+
